@@ -1,3 +1,7 @@
+---
+import logo from "../../assets/main-logo.png";
+---
+
 <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50 mb-5">
   <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
     <!-- Logo -->
@@ -5,18 +9,18 @@
       <div
         class="flex flex-col items-center md:items-start text-center md:text-left"
       >
-        <img src="/logo.svg" alt="Logo" class="w-12 h-12" />
+        <img src={logo.src} alt="Logo" class="h-12 w-auto object-contain" />
       </div>
     </a>
 
     <!-- Links md+ -->
-    <ul class="hidden md:flex space-x-8">
+    <ul class="hidden md:flex space-x-8 items-center">
       <li>
         <a
-          href="/"
+          href="#about-hospice"
           class="relative group text-gray-700 font-bold transition-colors duration-300 hover:text-[#2F855A]"
         >
-          Home
+          About Hospice Care
           <span
             class="absolute left-0 -bottom-2 w-0 h-0.5 bg-[#2F855A] transition-all duration-300 group-hover:w-full"
           ></span>
@@ -24,10 +28,10 @@
       </li>
       <li>
         <a
-          href="/blog"
+          href="#get-guidance"
           class="relative group text-gray-700 font-bold transition-colors duration-300 hover:text-[#2F855A]"
         >
-          Blog
+          Get Free Guidance
           <span
             class="absolute left-0 -bottom-2 w-0 h-0.5 bg-[#2F855A] transition-all duration-300 group-hover:w-full"
           ></span>
@@ -35,10 +39,32 @@
       </li>
       <li>
         <a
-          href="/contact"
-          class="px-4 py-2 text-white font-semibold rounded-3xl bg-[#2F855A] hover:bg-[#186e43] transition"
+          href="#hospice-faq"
+          class="relative group text-gray-700 font-bold transition-colors duration-300 hover:text-[#2F855A]"
         >
-          Contact
+          Hospice FAQ
+          <span
+            class="absolute left-0 -bottom-2 w-0 h-0.5 bg-[#2F855A] transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="tel:949-664-9916"
+          class="px-4 py-2 text-white font-semibold rounded-3xl bg-[#2F855A] hover:bg-[#186e43] transition flex items-center gap-2"
+        >
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+          </svg>
+          949-664-9916
+        </a>
+      </li>
+      <li>
+        <a
+          href="#contact"
+          class="px-4 py-2 text-[#2F855A] font-semibold border-2 border-[#2F855A] rounded-3xl hover:bg-[#2F855A] hover:text-white transition"
+        >
+          Contact Us
         </a>
       </li>
     </ul>
@@ -112,24 +138,42 @@
         <ul class="flex flex-col space-y-6 mt-4 ml-6">
           <li>
             <a
-              href="/"
+              href="#about-hospice"
               class="text-gray-700 text-lg font-bold hover:text-[#2F855A]"
-              >Home</a
+              >About Hospice Care</a
             >
           </li>
           <li>
             <a
-              href="/blog"
+              href="#get-guidance"
               class="text-gray-700 text-lg font-bold hover:text-[#2F855A]"
-              >Blog</a
+              >Get Free Guidance</a
             >
           </li>
           <li>
             <a
-              href="/contact"
-              class="px-4 py-2 text-white font-semibold rounded-lg bg-[#2F855A] hover:bg-[#186e43] transition"
+              href="#hospice-faq"
+              class="text-gray-700 text-lg font-bold hover:text-[#2F855A]"
+              >Hospice FAQ</a
             >
-              Contact
+          </li>
+          <li>
+            <a
+              href="tel:949-664-9916"
+              class="px-4 py-2 text-white font-semibold rounded-lg bg-[#2F855A] hover:bg-[#186e43] transition flex items-center gap-2"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+              </svg>
+              949-664-9916
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="px-4 py-2 text-[#2F855A] font-semibold border-2 border-[#2F855A] rounded-lg hover:bg-[#2F855A] hover:text-white transition"
+            >
+              Contact Us
             </a>
           </li>
         </ul>

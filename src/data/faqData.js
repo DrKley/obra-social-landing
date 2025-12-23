@@ -1,22 +1,27 @@
 export const faqs = [
   {
-    question: "Which health plans do you cover?",
+    question: "What is hospice care?",
     answer:
-      "We work with a wide network of health plans and private insurance, ensuring options tailored to every need.",
+      "Hospice focuses on comfort, symptom relief, and quality of life when a cure is no longer possible.",
   },
   {
-    question: "How can I enroll?",
+    question: "Is hospice covered by Medicare?",
     answer:
-      "You can start the process by filling out our contact form or calling us directly. We will guide you every step of the way.",
+      "Yes. Hospice is fully covered by Medicare, Medi-Cal, and most private insurance plans.",
   },
   {
-    question: "Do you provide consultations nationwide?",
+    question: "Can hospice be provided at home?",
     answer:
-      "Yes, we offer in-person care at our locations as well as virtual consultations across the country.",
+      "Absolutely. Our team provides complete hospice services in the comfort of your home.",
   },
   {
-    question: "Do you have family plans?",
+    question: "What support do families receive?",
     answer:
-      "Yes, we offer family coverage with special benefits and discounts for family groups.",
+      "We provide hands-on RN/LVN nursing care, medical social work support, respite services, bereavement counseling, and emotional and spiritual care. Our team also offers physical, occupational, and speech therapies to enhance comfort and quality of life. On-call support is available 24/7, and in-home visits are scheduled based on each patient's needs and individualized care plan.",
+  },
+  {
+    question: "How quickly can care begin?",
+    answer:
+      "Most families can start services the same day or within 24 hours.",
   },
 ];
