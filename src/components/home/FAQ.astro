@@ -4,7 +4,7 @@ import { faqs } from "../../data/faqData.js";
 
 <section id="hospice-faq" class="py-20 bg-base-200">
   <div class="max-w-5xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-center text-[#2F855A] mb-8">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-grey mb-8">
       Frequently Asked Questions
     </h2>
 
@@ -13,10 +13,10 @@ import { faqs } from "../../data/faqData.js";
         faqs.map((faq, index) => (
           <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-lg">
             <input type="radio" name="faq-accordion" checked={index === 0} />
-            <div class="collapse-title text-lg font-semibold text-[#2F855A]">
+            <div class="collapse-title text-lg font-semibold text-green">
               {faq.question}
             </div>
-            <div class="collapse-content text-gray-600">
+            <div class="collapse-content text-grey">
               <p>{faq.answer}</p>
             </div>
           </div>
@@ -27,8 +27,7 @@ import { faqs } from "../../data/faqData.js";
     <div class="text-center mt-10">
       <a
         href="#contact"
-        class="px-6 py-3 bg-[#2F855A] hover:bg-green-800 text-white font-semibold rounded-3xl transition inline-block"
-      >
+        class="px-6 py-3 bg-green hover:bg-green-800 text-white font-semibold rounded-3xl transition inline-block">
         Request a Free Assessment
       </a>
     </div>

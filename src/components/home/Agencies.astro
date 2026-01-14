@@ -1,0 +1,60 @@
+---
+import { Image } from 'astro:assets';
+
+const agencies = [
+  {
+    nombre: 'California Department of Public health',
+    imagePath: '../../assets/img/agencies/dptpublichealth.png',
+  },
+  {
+    nombre: 'cms',
+    imagePath: '../../assets/img/agencies/cms.png',
+  },
+  {
+    nombre: 'achc',
+    imagePath: '../../assets/img/agencies/achc.png',
+  },
+  {
+    nombre: 'hcs',
+    imagePath: '../../assets/img/agencies/hcs.png',
+  },
+];
+
+// DOCS-CORRECT glob (lazy imports)
+const images = import.meta.glob(
+  '../../assets/img/agencies/*.{png,jpg,jpeg,webp,svg}'
+);
+---
+
+
+<section class="my-30">
+  <div class="max-w-6xl mx-auto text-center px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-blue mb-10">
+      Recognized by State and Federal Agencies
+    </h2>
+
+    <div class="flex gap-10 md:gap-20 items-center justify-center mb-8">
+      {agencies.map((agency) => {
+        const importImage = images[agency.imagePath];
+
+        if (!importImage) {
+          throw new Error(
+            `Image not found: ${agency.imagePath}`
+          );
+        }
+
+        return (
+          <div class=" transition">
+            <Image
+              src={importImage()}
+              alt={agency.nombre}
+              height={200}
+            />
+          </div>
+        );
+      })}
+    </div>
+
+  </div>
+</section>
+

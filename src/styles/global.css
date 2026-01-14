@@ -2,3 +2,13 @@
 @plugin "daisyui" {
    themes: light;
 };
+@theme {
+  --color-green: #6fab56;
+  --color-lightgreen: #e1f4d9;
+  --color-lightgreen2: #c6dbbd;
+  --color-darkgreen: #689c4f;
+  --color-lightblue: #74b2cf;
+  --color-blue: #2c5d74;
+  --color-grey: #5c5c5d;
+  --color-background: #f1f3f4;
+}
